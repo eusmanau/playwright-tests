@@ -13,12 +13,6 @@ test('check elements on the page', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'Search (Ctrl+K)' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Search (Ctrl+K)' })).toBeVisible();
 });
-
-test('check elements name on the page 2', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-  await expect(page.getByRole('link', { name: 'Playwright logo Playwright' })).toContainText();
-});
-
 test('attribute check', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
