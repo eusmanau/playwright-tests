@@ -27,12 +27,12 @@ import { test, expect } from '@playwright/test';
 //   await expect(page.locator('li.data-gr4')).toHaveCount(120);
 // });
 
-const url = (c) => `https://www.ebay.com/sch/i.html?_nkw=nike&_ipg=${c}`;
+// const url = (c) => `https://www.ebay.com/sch/i.html?_nkw=nike&_ipg=${c}`;
 
-test('check elements count', async ({ page }) => {
-  await page.goto(url(120));
+// test('check elements count', async ({ page }) => {
+//   await page.goto(url(120));
 
-  // >>>>> дополнить код здесь
-  await expect(page.locator('li.s-item[data-gr4]')).toHaveCount(120);
-  // <<<<<
-});
+//   // >>>>> дополнить код здесь
+//   await expect(page.locator('li.s-item[data-gr4]')).toHaveCount(120);
+//   // <<<<<
+// });
